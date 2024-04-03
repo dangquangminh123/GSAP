@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font -->
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+   
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+     <!-- Icon - icon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.5.5/ionicons.js"></script>
+     <!-- css -->
+     <link rel="stylesheet" href="styles.css">
+     <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <span>New York</span>
+            </div>
+            <div class="search">
+                <ion-icon name="search"></ion-icon>
+                <ion-icon name="menu"></ion-icon>
+            </div>
+        </div>
+
+        <!-- images -->
+        <div class="images">
+            <div class="img img-1"></div>
+            <div class="img img-2"></div>
+            <div class="img img-3"></div>
+            <div class="img img-4"></div>
+            <div class="img img-5"></div>
+        </div>
+
+        <div class="title">
+            <span>NewYork</span>
+        </div>
+
+        <!-- side-icon -->
+        <div class="side-icon">
+            <ion-icon name="arrow-dropleft-circle" class="icn"></ion-icon>
+            <ion-icon name="arrow-dropright-circle" class="icn"></ion-icon>
+        </div>
+
+        <!-- Bottom -->
+        <div class="bottom-bar">
+            <div>Vogue Fashion</div>
+            <div>2022</div>
+            <div>Design Brand</div>
+        </div>
+
+        <!-- Socials media -->
+        <div class="media">
+            <ul>
+                <li><ion-icon name="logo-facebook"></ion-icon></li>
+                <li><ion-icon name="logo-twitter"></ion-icon></li>
+                <li><ion-icon name="logo-instagram"></ion-icon></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+         TweenMax.staggerFrom(".logo", 1.6, {
+            delay: 0.2,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+        });
+        TweenMax.staggerFrom(".search", 1.6, {
+            delay: 0.2,
+            opacity: 0,
+            y: 20,
+            ease: Expo.easeInOut
+        });
+        TweenMax.staggerFrom(".img", 3, {
+            delay: 0.7,
+            opacity: 0,
+            y: 70,
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.staggerFrom(".bottom-bar", 2, {
+            delay: 2,
+            opacity: 0,
+            x: -40,
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.staggerFrom(".icn", 2, {
+            delay: 2.5,
+            opacity: 0,
+            y: 40,
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.staggerFrom(".title span", 3, {
+            delay: 3,
+            opacity: 0,
+            x: -100,
+            ease: Expo.easeInOut
+        });
+
+        TweenMax.staggerFrom(".media ul li", 3, {
+            delay: 4.5,
+            opacity: 0,
+            y: 50,
+            ease: Expo.easeInOut
+        });
+    </script>
+</body>
+</html>
